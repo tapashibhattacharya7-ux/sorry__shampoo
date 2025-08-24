@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorry Sampurna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .gift-box {
+      width: 100px;
+      height: 100px;
+      background: pink;
+      border: 2px solid white;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gift-box:hover {
+      transform: scale(1.1);
+    }
+
+    .message {
+      display: none;
+      margin-top: 10px;
+      font-size: 1.2em;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .big-box {
+      width: 150px;
+      height: 150px;
+      font-size: 2.5em;
+      background-color: gold;
+      color: black;
+    }
+
+    .big-message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.5em;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Sorry Sampurna 💔</h1>
+
+    <!-- First Gift Box -->
+    <div class="gift-box" onclick="showMessage('msg1')">🎁</div>
+    <div class="message" id="msg1">Sorry Sampurna 😔</div>
+
+    <!-- 4 Small Gift Boxes -->
+    <div class="gift-box" onclick="showMessage('msg2')">🎁</div>
+    <div class="message" id="msg2">Ami sotti onek regret korchi otar jonno.</div>
+
+    <div class="gift-box" onclick="showMessage('msg3')">🎁</div>
+    <div class="message" id="msg3">Ami sotti bolte chai ni oita.</div>
+
+    <div class="gift-box" onclick="showMessage('msg4')">🎁</div>
+    <div class="message" id="msg4">Tui amr bon er moton hos tui onek bhalo bondhu amr.</div>
+
+    <div class="gift-box" onclick="showMessage('msg5')">🎁</div>
+    <div class="message" id="msg5">Please forgive me, Sampurna. 🥺</div>
+
+    <!-- Final Big Gift Box -->
+    <div class="gift-box big-box" onclick="showBigMessage()">🎁</div>
+    <div class="big-message" id="bigMsg">
+      Sampurna, ami jani ami vul korechi. Amar ekta bhul kothai tor onek kharap legeche, seta ami mon theke feel korechi. <br><br>
+      Ami sotti regret korchi. Ami chai amader bhaichara ta abar ager moto hoye jak. <br><br>
+      Tui jodi amk last bar er moton khoma kore dis arr plss amk ignore koris na sob jaiga theke u are one of the besttest frienf i have ever had. 🥹💖
+    </div
+  </div>
+
+  <script>
+    function showMessage(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function showBigMessage() {
+      document.getElementById("bigMsg").style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
+
